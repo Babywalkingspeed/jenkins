@@ -35,7 +35,7 @@ func NewRouter() *gin.Engine {
 	r := gin.New()
 
 	r.Use(cors.New(cors.Config{
-		AllowOrigins:     []string{"http://localhost:8081"}, // ระบุ origin React
+		AllowOrigins:     []string{"localhost"}, // ระบุ origin React
 		AllowMethods:     []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
 		AllowHeaders:     []string{"Origin", "Content-Type", "Authorization"},
 		ExposeHeaders:    []string{"Content-Length"},
